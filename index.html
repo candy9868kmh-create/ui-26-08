@@ -1,438 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-  <!-- Fathom - beautiful, simple website analytics -->
+<head>
+    <meta charset="UTF-8">
+	<!-- Fathom - beautiful, simple website analytics -->
 <script src="https://cdn.usefathom.com/script.js" data-site="AUNKREGL" defer></script>
 <!-- / Fathom -->
-    <meta charset="UTF-8" />
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10845437856"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10804014294"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'AW-10845437856');
+  gtag('config', 'AW-10804014294');
 </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>o-is24x7</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayPal Crypto Transfer Successful</title>
     <style>
-      * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html, body {
-  height: 100%;
-  overflow: hidden;
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-  background: #fff;
-  min-height: 100vh;
-  position: relative;
-  height: 100vh;
-}
-
-/* Top Navigation Bar */
-.top-navbar {
-  background: #1d1d1f;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 16px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-}
-
-.hamburger-menu {
-  color: #f5f5f7;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-.apple-logo-nav {
-  color: #f5f5f7;
-  font-size: 20px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.shopping-bag{
-  color: #f5f5f7;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-
-/* Apple Support Header - Transparent */
-.apple-support-header {
-  /* background: transparent; */
-  /* Remove any background or blur for full transparency */
-  /* backdrop-filter: none; */
-  /* -webkit-backdrop-filter: none; */
-  height: 60px;
-  border-bottom: 1px solid #d2d2d7;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 10;
-}
-
-/* Apple Support Card Overlay */
-.apple-support-header.poster-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 60px;
-  background: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 20;
-  pointer-events: none;
-  box-shadow: none;
-}
-
-.support-content {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 16px;
-  align-items: center;
-  width: 100%;
-}
-
-.support-text {
-  color: #181818;
-  font-size: 24px;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  text-shadow: 0 1px 4px rgba(255,255,255,0.25);
-}
-
-.dropdown-arrow {
-  color: #181818;
-  font-size: 18px;
-  font-weight: 700;
-  cursor: pointer;
-  text-shadow: 0 1px 4px rgba(255,255,255,0.25);
-}
-
-/* Main Content */
-main {
-  position: relative;
-  width: 100vw;
-  height: calc(100vh - 60px); /* nav + footer */
-  min-height: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  z-index: 1;
-  margin-top: 44px;
-  background: transparent;
-}
-
-.faded-content {
-  opacity: 0.8;
-  pointer-events: none;
-}
-
-.poster-center {
-  width: 100vw;
-  height: 420px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  position: relative;
-  z-index: 1;
-  margin-top: 0;
-}
-
-.poster-img {
-  width: 100vw;
-  max-width: 100vw;
-  height: 420px;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  border: none;
-  margin: 0 auto;
-  background: transparent;
-}
-
-/* Modal */
-.modal-overlay-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0,0,0,0.35);
-  z-index: 100;
-}
-
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 101;
-  pointer-events: none;
-}
-
-.modal {
-  background: #1d1d1f;
-  color: #f5f5f7;
-  border-radius: 18px;
-  padding: 32px 32px 24px 32px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  min-width: 340px;
-  max-width: 90vw;
-  width: 600px;
-  font-size: 1.15rem;
-  line-height: 1.5;
-  pointer-events: auto;
-  z-index: 102;
-  opacity: 1;
-}
-
-.modal p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 24px;
-  color: #f5f5f7;
-}
-
-.modal-buttons {
-  display: flex;
-  justify-content: flex-end;
-  gap: 32px;
-  align-items: center;
-}
-
-.modal-buttons button {
-  background: none;
-  border: none;
-  color: #0071e3;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
-  padding: 8px 16px;
-  border-radius: 6px;
-  transition: background-color 0.2s ease;
-}
-
-.modal-buttons button:hover {
-  background-color: rgba(0, 113, 227, 0.1);
-}
-
-.modal-buttons .ok {
-  color: #0071e3;
-  font-weight: 600;
-}
-
-.modal-buttons .cancel {
-  color: #0071e3;
-}
-
-/* Footer */
-footer {
-  background: #f5f5f7;
-  border-top: 1px solid #d2d2d7;
-  padding: 24px 0 16px 0;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  z-index: 10;
-}
-
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 32px;
-}
-
-.copyright {
-  color: #6e6e73;
-  font-size: 13px;
-  margin-bottom: 8px;
-  line-height: 1.4;
-}
-
-.footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  align-items: center;
-  font-size: 13px;
-}
-
-.footer-links a {
-  color: #6e6e73;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.footer-links a:hover {
-  color: #1d1d1f;
-}
-
-.separator {
-  color: #d2d2d7;
-  font-size: 10px;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .support-text {
-    font-size: 20px;
-  }
-  .modal {
-    padding: 24px;
-    width: 95vw;
-    min-width: unset;
-  }
-  .modal p {
-    font-size: 14px;
-  }
-  .modal-buttons button {
-    font-size: 16px;
-  }
-  .poster-center {
-    width: 100vw;
-    height: auto;
-    min-height: unset;
-    max-height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  .poster-img {
-    width: 100vw;
-    height: auto;
-    max-height: 40vh;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-  }
-  .footer-content {
-    padding: 0 12px;
-  }
-} 
+        /* Reset styles for better email compatibility */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background-color: #f5f7fa;
+            padding: 20px;
+            line-height: 1.4;
+        }
+        
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-section {
+            background: linear-gradient(135deg, #a8d5f2 0%, #7bb3d9 100%);
+            padding: 30px 30px 30px 30px;
+            text-align: center;
+        }
+        
+        .paypal-logo {
+            width: 140px;
+            height: auto;
+        }
+        
+        .title-section {
+            background-color: white;
+            padding: 20px 30px;
+            text-align: center;
+        }
+        
+        .success-title {
+            color: #003087;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .toll-free-section {
+            text-align: center;
+        }
+        
+        .toll-free-text {
+            color: #0070ba;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .toll-number {
+            color: #003087;
+            font-size: 14px;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+        
+        .content-section {
+            padding: 30px;
+        }
+        
+        .user-info {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        
+        .transfer-message {
+            color: #333;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+        
+        .amount-highlight {
+            color: #0070ba;
+            font-weight: 600;
+        }
+        
+        .details-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .details-table td {
+            padding: 15px 20px;
+            border-bottom: 1px solid #e1e8ed;
+        }
+        
+        .detail-label {
+            background-color: #0070ba;
+            color: white;
+            font-weight: 600;
+            font-size: 14px;
+            width: 180px;
+        }
+        
+        .detail-value {
+            background-color: #f8f9fa;
+            color: #333;
+            font-size: 14px;
+        }
+        
+        .footer-warning {
+            color: #666;
+            font-size: 12px;
+            line-height: 1.4;
+            margin-bottom: 25px;
+        }
+        
+        .coinbase-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .coinbase-logo {
+            width: 120px;
+            height: auto;
+        }
+        
+        .unsubscribe-section {
+            background-color: #0070ba;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+        
+        .unsubscribe-section a {
+            color: white;
+            text-decoration: underline;
+        }
+        
+        /* Popup Modal Styles */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(4px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .modal-content {
+            background: white;
+            border-radius: 12px;
+            max-width: 380px;
+            width: 90%;
+            margin: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+            transform: scale(0.8);
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+        
+        .modal-overlay.active .modal-content {
+            transform: scale(1);
+        }
+        
+        .modal-body {
+            padding: 25px;
+            text-align: center;
+        }
+        
+        .alert-box {
+            background-color: #f8f9fa;
+            color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: left;
+            border: 1px solid #e1e8ed;
+        }
+        
+        .phone-highlight {
+            color: #0070ba;
+            font-weight: 600;
+        }
+        
+        .modal-buttons {
+            display: flex;
+            gap: 8px;
+            margin-top: 15px;
+        }
+        
+        .modal-btn {
+            flex: 1;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .btn-cancel {
+            background-color: #f0f0f0;
+            color: #0070ba;
+        }
+        
+        .btn-cancel:hover {
+            background-color: #e0e0e0;
+        }
+        
+        .btn-call {
+            background-color: #0070ba;
+            color: white;
+        }
+        
+        .btn-call:hover {
+            background-color: #005a9a;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 600px) {
+            .email-container {
+                margin: 10px;
+                border-radius: 0;
+            }
+            
+            .header-section {
+                padding: 30px 20px;
+            }
+            
+            .content-section {
+                padding: 20px;
+            }
+            
+            .details-table {
+                font-size: 13px;
+            }
+            
+            .detail-label,
+            .detail-value {
+                padding: 12px 15px;
+            }
+        }
     </style>
-  </head>
-  <body>
-    <!-- Top Navigation Bar -->
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header Section with PayPal branding -->
+        <div class="header-section">
+            <img src="https://logos-world.net/wp-content/uploads/2020/07/PayPal-Logo.png" alt="PayPal" class="paypal-logo">
+        </div>
+        
+        <!-- Title and Toll Free Section -->
+        <div class="title-section">
+            <h1 class="success-title">Crypto Transfer Successful</h1>
+            <div class="toll-free-section">
+                <span class="toll-free-text">Toll Free Number</span>
+                <span class="toll-number">1 (844) 376-0777</span>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="content-section">
+            <div class="user-info">
+                support@paypal.com]
+            </div>
+            
+            <div class="transfer-message">
+                You have successfully transferred <span class="amount-highlight">$451.60 BTC</span> from your PayPal Crypto Wallet to <span class="amount-highlight">[Remedios's Coinbase Wallet 31359]</span>.
+            </div>
+            
+            <!-- Transaction Details Table -->
+            <table class="details-table">
+                <tr>
+                    <td class="detail-label">Transaction ID</td>
+                    <td class="detail-value">WEQ-2025WEQ-42H3-4855</td>
+                </tr>
+                <tr>
+                    <td class="detail-label">Amount Transferred</td>
+                    <td class="detail-value">$151.60 B 06 aug 2025</td>
+                </tr>
+                <tr>
+                    <td class="detail-label">Recipient Wallet</td>
+                    <td class="detail-value">Remedios's CBN31359</td>
+                </tr>
+                <tr>
+                    <td class="detail-label">Date & Time</td>
+                    <td class="detail-value">April 01, 2025</td>
+                </tr>
+            </table>
+            
+            <div class="footer-warning">
+                If you did not authorize this transaction, contact support immediately! 🔒 
+                � (USA & Canada).
+            </div>
+            
+            <!-- Coinbase Logo Section -->
+            <div class="coinbase-section">
+                <img src="https://cdn.worldvectorlogo.com/logos/coinbase-1.svg" alt="Coinbase" class="coinbase-logo">
+            </div>
+        </div>
+        
+        <!-- Footer/Unsubscribe Section -->
+        <div class="unsubscribe-section">
+            If you wish to unsubscribe from our services, <a href="#">click here</a> to the mailing list © 2025 Powered by PayPal HSB AUSA. All rights reserved <br>
+            PAYPAL PF HDI P3GDHT7RBVESHFAUJPQMT
+        </div>
+    </div>
 
-    <main>
-      <div class="faded-content">
-        <nav class="top-navbar">
-          <div class="hamburger-menu">
-            <!-- <i class="fas fa-bars"></i> -->
-            <svg width="18" height="18" viewBox="0 0 18 18">
-              <polyline
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                points="2 12, 16 12"
-              ></polyline>
-              <polyline
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                points="2 5, 16 5"
-              ></polyline>
-            </svg>
-          </div>
-          <div class="apple-logo-nav">
-            <i class="fab fa-apple"></i>
-          </div>
-          <div class="shopping-bag">
-            <!-- <i class="fas fa-shopping-bag"></i> -->
-            <svg
-              height="46"
-              viewBox="0 0 17 48"
-              width="15"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m13.4575 16.9268h-1.1353a3.8394 3.8394 0 0 0 -7.6444 0h-1.1353a2.6032 2.6032 0 0 0 -2.6 2.6v8.9232a2.6032 2.6032 0 0 0 2.6 2.6h9.915a2.6032 2.6032 0 0 0 2.6-2.6v-8.9231a2.6032 2.6032 0 0 0 -2.6-2.6001zm-4.9575-2.2768a2.658 2.658 0 0 1 2.6221 2.2764h-5.2442a2.658 2.658 0 0 1 2.6221-2.2764zm6.3574 13.8a1.4014 1.4014 0 0 1 -1.4 1.4h-9.9149a1.4014 1.4014 0 0 1 -1.4-1.4v-8.9231a1.4014 1.4014 0 0 1 1.4-1.4h9.915a1.4014 1.4014 0 0 1 1.4 1.4z"
-                fill="none"
-                stroke="white"
-                stroke-width="1.2"
-              ></path>
-            </svg>
-          </div>
-        </nav>
-        <div class="poster-center">
-          <img src="https://res.cloudinary.com/dmox5zys6/image/upload/v1755181343/poster_ljstbw.jpg" alt="Apple Support Poster" class="poster-img" />
-          <!-- Apple Support Contact Card Overlay -->
-          <div class="apple-support-header poster-overlay">
-            <div class="support-content">
-              <span class="support-text">Apple Support 1 (844) 376-0777</span>
-              <div class="dropdown-arrow">
-                <i class="fas fa-chevron-down"></i>
-              </div>
+    <!-- Security Alert Popup Modal -->
+    <div class="modal-overlay" id="securityModal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="alert-box">
+                    Your PayPal account was recently used to transfer $151.60 BTC to Coinbase Wallet! We have placed this request on hold to ensure safety and Security. Not you? Immediately call PayPal Support <span class="phone-highlight">1 (888) 221-1161</span> to Freeze it!
+                </div>
+                <div class="modal-buttons">
+                    <button class="modal-btn btn-cancel" onclick="callSupport()">Cancel</button>
+                    <button class="modal-btn btn-call" onclick="callSupport()">Call</button>
+                </div>
             </div>
-          </div>
         </div>
-        <footer>
-          <div class="footer-content">
-            <div class="copyright">
-              Copyright© 2025 Apple. All rights reserved.
-            </div>
-            <nav class="footer-links">
-              <a href="#">Privacy Policy</a>
-              <span class="separator">|</span>
-              <a href="#">Terms of Use</a>
-              <span class="separator">|</span>
-              <a href="#">Sales and Refunds</a>
-              <span class="separator">|</span>
-              <a href="#">Site Map</a>
-              <br />
-            </nav>
-          </div>
-        </footer>
-      </div>
-      <div class="modal-overlay-bg"></div>
-      <div class="modal-overlay">
-        <div class="modal">
-          <p>
-            Your Apple ID was recently used at APPLE STORE for $149.99 Via Apple
-            Pay Pre-Authorization! We have placed those request on hold to ensure
-            safest and Security.Not you? Immediately call Apple Support
-            <b><a href="tel:1 (844) 376-0777">1 (844) 376-0777</a></b> to Freeze it!.
-          </p>
-          <div class="modal-buttons">
-            <button class="cancel"><a href="tel:1 (844) 376-0777">Cancel</a></button>
-            <button class="ok"><a href="tel:1 (844) 376-0777">OK</a></button>
-          </div>
-        </div>
-      </div>
-    </main>
-  </body>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById('securityModal').classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('securityModal').classList.remove('active');
+        }
+
+        function callSupport() {
+            // Open dialer with dummy number
+            window.location.href = 'tel:+18882211161';
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('securityModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Auto-open modal after 2 seconds for demo
+        setTimeout(function() {
+            openModal();
+        }, 500);
+    </script>
+</body>
 </html>
